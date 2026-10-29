@@ -40,8 +40,20 @@ git push
 
 ## 3. Branches und Merge-Konflikte
 ### 3.1 Was sind Branches?
+Ein Branch ist ein eigenständiger Entwicklungszweig innerhalb eines Git-Repositorys. Er ermöglicht es, Änderungen unabhängig vom Hauptbranch main vorzunehmen. Dadurch können mehrere Personen parallel an einem Projekt arbeiten, ohne die stabile Hauptversion direkt zu verändern.
+
+Branches werden beispielsweise verwendet, um neue Funktionen zu entwickeln, Fehler zu beheben oder Änderungen zunächst zu testen.
 ### 3.2 Branches erstellen und zusammenführen
+- git branch: Zeigt die lokalen Branches an.
+- git switch -c <Branchname>: Erstellt einen neuen Branch und wechselt dorthin.
+- git switch <Branchname>: Wechselt zu einem bestehenden Branch.
+- git merge <Branchname>: Führt einen anderen Branch in den aktuellen Branch zusammen.
+- git push -u origin <Branchname>: Veröffentlicht den Branch auf GitHub.
+Über Pull Requests können Änderungen gemeinsam überprüft und anschließend übernommen werden.
 ### 3.3 Merge-Konflikte erkennen und lösen
+Ein Merge-Konflikt entsteht beispielsweise, wenn zwei Personen dieselbe Textstelle unterschiedlich bearbeiten und Git die Änderungen nicht automatisch zusammenführen kann.
+
+Zur Lösung werden die betroffenen Stellen geprüft, die gewünschte Fassung festgelegt und die Konfliktmarkierungen entfernt. Anschließend wird die Datei gespeichert, mit git add markiert und der Merge abgeschlossen.
 
 ## 4. Git mit IntelliJ und PyCharm
 ### 4.1 Local Repository
